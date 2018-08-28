@@ -4,13 +4,14 @@
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)][Gitter]
 [![Releases](https://img.shields.io/github/downloads/ethereum-mining/ethminer/total.svg)][Releases]
 
-> Ethereum miner with OpenCL, CUDA and stratum support
+> Ethereum miner with OpenCL, CUDA and stratum support *(CPU OpenCL Support Reverted)*
 
 **Ethminer** is an Ethash GPU mining worker: with ethminer you can mine every coin which relies on an Ethash Proof of Work thus including Ethereum, Ethereum Classic, Metaverse, Musicoin, Ellaism, Pirl, Expanse and others. This is the actively maintained version of ethminer. It originates from [cpp-ethereum] project (where GPU mining has been discontinued) and builds on the improvements made in [Genoil's fork]. See [FAQ](#faq) for more details.
 
 ## Features
 
 * OpenCL mining
+* CPU Mining
 * Nvidia CUDA mining
 * realistic benchmarking against arbitrary epoch/DAG/blocknumber
 * on-GPU DAG generation (no more DAG files on disk)
@@ -149,7 +150,8 @@ The default parameters are fine in most scenario's (CUDA). For OpenCL it varies 
 
 ### Can I CPU Mine?
 
-No, use geth, the go program made for ethereum by ethereum.
+Yes, CPU Mining has been Reverted and should be considered Experimental.
+Upstream they prefer to use geth, the go program made for ethereum by ethereum.
 
 ### CUDA GPU order changes sometimes. What can I do?
 
