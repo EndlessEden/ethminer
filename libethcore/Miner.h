@@ -46,6 +46,7 @@ namespace eth
 {
 enum class MinerType
 {
+<<<<<<< HEAD
     Mixed,
     CL,
     CUDA
@@ -77,6 +78,12 @@ struct HwMonitor
     int tempC = 0;
     int fanP = 0;
     double powerW = 0;
+=======
+	CPU,
+	CL,
+	CUDA,
+	Mixed
+>>>>>>> parent of fa4c7fbb4... Remove CPU miner leftovers
 };
 
 inline std::ostream& operator<<(std::ostream& os, HwMonitor _hw)
